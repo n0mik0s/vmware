@@ -1,0 +1,23 @@
+es_config:
+  nodes: [kilo.sdab.sn]
+  port: 9200
+  use_ssl: True
+  verify_certs: True
+  ca_cert: /home/doopy/pyprojects/3parmon/kilo.pem
+  pattern: vmware
+  index: vmware-000001
+  shards: 1
+  replicas: 0
+  user: elastic
+  password: P@ssw0rd
+  template: template_vmware
+  lifecycle_name: vmware
+  lifecycle_rollover_alias: rollover_alias_vmware
+
+vrealize:
+  base_url: https://vcop.astelit.ukr
+  user: itm_ad_vrealize@astelit.ukr
+  password: P@ssw0rd984
+  auth_source: AD-ASTELIT-SSL
+  interval_type: MINUTES
+  interval_quantifier: 5

@@ -1,0 +1,23 @@
+es_config:
+  nodes: [magneto.sdab.sn, beast.sdab.sn, storm.sdab.sn, cetus.sdab.sn]
+  port: 9200
+  use_ssl: True
+  verify_certs: True
+  ca_cert: /home/doopy/pyprojects/vmware/root-ca.pem
+  pattern: vrealize
+  index: vrealize-000001
+  shards: 3
+  replicas: 1
+  user: vrealize
+  password: vrealize
+  template: template_vrealize
+  lifecycle_name: vrealize
+  lifecycle_rollover_alias: rollover_alias_vrealize
+
+vrealize:
+  base_url: https://vcop.astelit.ukr
+  user: itm_ad_vrealize@astelit.ukr
+  password: P@ssw0rd984
+  auth_source: AD-ASTELIT-SSL
+  interval_type: MINUTES
+  interval_quantifier: 5
